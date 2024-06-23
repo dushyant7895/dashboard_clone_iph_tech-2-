@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* DateRangePicker.css */
+.flatpickr-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+   
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .calendar-icon {
+    margin-right: 8px; /* Adjust spacing as needed */
+    font-size: 1.5em;
+    color: gray; /* Adjust color as needed */
   }
+  
+  .datepicker-input {
+    flex: 1;
+    padding-left: 1.5em; /* Adjust padding to prevent text overlap with icon */
+    background-color: white; /* dark:bg-slate-800 */
+    color: gray; /* text-slate-500 */
+    border: none;
+    outline: none;
+    height: 7vh; /* Adjust height as needed */
+    border-radius: 4px;
+  }
+  
+ /*for Side Bar  custom.css */
+.custom-accordion .accordion-header {
+  background-color: #1E293B; /* dark background */
+  color: white; /* white text */
+  border: none; /* remove border */
 }
+
+.custom-accordion .accordion-button {
+  background-color: #1E293B; /* dark background */
+  color: white; /* white text */
+  border: none; /* remove border */
+  box-shadow: none; /* remove box shadow */
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #0F172A; /* slightly lighter background when open */
+  color: white; /* white text */
+}
+
+.custom-accordion .accordion-body {
+  background-color: #0F172A; /* another shade of dark background */
+  color: white; /* white text */
+  border: none; /* remove border */
+}
+
